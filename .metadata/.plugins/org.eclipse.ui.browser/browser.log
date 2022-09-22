@@ -1,0 +1,7 @@
+
+Sep 13, 2022 15:11:58.267 NEW SESSION
+Sep 13, 2022 15:11:58.267 [2022-09-13T09:41:58Z ERROR viaduct::backend::ffi] Missing HTTP status
+Sep 13, 2022 15:11:58.268 [2022-09-13T09:41:58Z ERROR viaduct::backend::ffi] Missing HTTP status
+Sep 13, 2022 15:11:58.320 [Parent 11164, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Sep 13, 2022 15:11:58.322 [Parent 11164, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Sep 13, 2022 15:11:58.323 [Parent 11164, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

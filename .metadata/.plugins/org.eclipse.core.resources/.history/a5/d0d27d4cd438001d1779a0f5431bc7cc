@@ -1,0 +1,14 @@
+package com.entities;
+
+import java.util.Date;
+
+public class Todo {
+	
+	private String TodoTitle;
+	private String TodoContant;
+	private Date TodoDate;
+	
+	
+	
+
+}

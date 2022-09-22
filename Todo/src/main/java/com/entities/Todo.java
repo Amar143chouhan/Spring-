@@ -1,0 +1,46 @@
+package com.entities;
+
+import java.util.Date;
+
+public class Todo {
+	
+	private String TodoTitle;
+	private String TodoContant;
+	private Date TodoDate;
+	public Todo(String todoTitle, String todoContant, Date todoDate) {
+		super();
+		TodoTitle = todoTitle;
+		TodoContant = todoContant;
+		TodoDate = todoDate;
+	}
+	@Override
+	public String toString() {
+		return "Todo [TodoTitle=" + TodoTitle + ", TodoContant=" + TodoContant +"]";
+	}
+	public Todo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public String getTodoTitle() {
+		return TodoTitle;
+	}
+	public void setTodoTitle(String todoTitle) {
+		TodoTitle = todoTitle;
+	}
+	public String getTodoContant() {
+		return TodoContant;
+	}
+	public void setTodoContant(String todoContant) {
+		TodoContant = todoContant;
+	}
+	public Date getTodoDate() {
+		return TodoDate;
+	}
+	public void setTodoDate(Date todoDate) {
+		TodoDate = todoDate;
+	}
+	
+	
+	
+
+}

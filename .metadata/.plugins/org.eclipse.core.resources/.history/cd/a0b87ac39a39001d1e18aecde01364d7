@@ -1,0 +1,13 @@
+package springMvc.controller;
+
+public class ContactCtl {
+	
+	
+	@Req
+	public showform() {
+		
+		
+		return "contact";
+	}
+
+}

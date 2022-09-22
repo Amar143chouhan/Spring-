@@ -1,0 +1,23 @@
+package springMvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ContactCtl {
+	
+	@RequestMapping("/contact")
+	public String showform() {
+		
+		
+		return "contact";
+	}
+    @RequestMapping("/processform")
+	public String handleForm() {
+		
+		
+		return "";
+		
+	}
+	
+}

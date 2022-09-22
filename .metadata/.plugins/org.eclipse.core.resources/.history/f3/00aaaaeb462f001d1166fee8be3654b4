@@ -1,0 +1,20 @@
+package com.AnnoConfig.Spring;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages ="com.AnnoConfig.Spring")
+public class JavaConfigFile {
+	
+	
+	public Student getStudent() {
+		
+		Student1 student=new Student1();
+		
+		return Student1;
+		}
+	
+	
+
+}

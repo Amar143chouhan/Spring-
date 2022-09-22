@@ -1,0 +1,26 @@
+package com.ctrl;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomCtrl {
+
+	@RequestMapping("/home")
+	public String home(Model m) {
+		
+		String name ="HOME";
+		m.addAttribute("page", name);
+
+		return "home";
+	}
+
+	public String add(Model m) {
+		
+	m.addAttribute("page" add);
+	
+		return "home";
+		
+	}
+}

@@ -1,0 +1,20 @@
+package co.springcore.Expl;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.Spring.AutoWireAnnotation.Employee;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+ApplicationContext context =new ClassPathXmlApplicationContext("co/springcore/Expl/ExplConfig.xml");
+
+DemoExpl d1=context.getBean("demoexpl",DemoExpl.class);
+
+System.out.println(d1);
+	    
+    }
+
+}

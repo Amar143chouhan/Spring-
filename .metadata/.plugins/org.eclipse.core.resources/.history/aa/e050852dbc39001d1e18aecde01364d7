@@ -1,0 +1,43 @@
+package springMvc.Dao;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Repository;
+
+import springMvc.Model.User;
+
+@Repository
+@Transactional
+public class UserDao {
+	
+	@Autowired
+	private HibernateTemplate hibernateTemplate;
+	
+	
+
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+
+
+
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hiberateTemplate;
+	}
+
+
+
+	public int saveuser(User user) {
+		
+		
+	int id = (Integer) this.hibernateTemplate.save(user);	
+		
+		return id;
+		}
+	
+	
+	
+
+}

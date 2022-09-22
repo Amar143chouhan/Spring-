@@ -1,0 +1,5 @@
+package com.SpringDao;
+
+public class UserDao {
+
+}

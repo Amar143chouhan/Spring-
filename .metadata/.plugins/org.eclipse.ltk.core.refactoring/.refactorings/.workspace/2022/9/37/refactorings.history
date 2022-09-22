@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Jdbc&apos; to &apos;SpringJdbc&apos;" description="Rename resource &apos;Jdbc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Jdbc" name="SpringJdbc" stamp="1662641202461" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ORM&apos; to &apos;SpringORM&apos;" description="Rename resource &apos;ORM&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ORM" name="SpringORM" stamp="1662798305829" updateReferences="true"/>
+</session>

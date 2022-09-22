@@ -1,0 +1,49 @@
+package com.ctrl;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.entities.Todo;
+
+@Controller
+public class HomCtrl {
+
+	@RequestMapping("/home")
+	public String home(Model m) {
+		
+	
+		m.addAttribute("page","home");
+
+		return "home";
+	}
+   
+	@RequestMapping("/add")
+	public String add(Model m) {
+		
+	Todo t =new Todo();
+	
+	m.addAttribute("page", "add");
+	m.addAttribute("Todo",t);
+		return "home";
+		}
+	
+	@RequestMapping()
+	public String saveTodo(@ModelAttribute("Todo") Todo t,Model  m) {
+		
+		
+		
+		
+		return "home";
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

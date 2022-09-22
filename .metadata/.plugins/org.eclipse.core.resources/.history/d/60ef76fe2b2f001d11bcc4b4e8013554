@@ -1,0 +1,42 @@
+package co.springcore.Expl;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("demo")
+public class DemoExpl {
+	
+	public DemoExpl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Value("#{44+32}")
+	private int x;
+	
+    @Value("#{55+93}")
+	private int y;
+	
+    public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int getY() {
+		return y;
+	}
+	public void setY(int y) {
+		this.y = y;
+	}
+	public DemoExpl(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+	@Override
+	public String toString() {
+		return "DemoExpl [x=" + x + ", y=" + y + "]";
+	}
+	
+
+}

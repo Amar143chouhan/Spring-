@@ -1,0 +1,52 @@
+package springMvc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import springMvc.Model.User;
+
+@Controller
+public class ContactCtl {
+
+	@RequestMapping("/contact")
+	public String showform() {
+
+		return "contact";
+	}
+
+	@RequestMapping(path="/processform",method = RequestMethod.POST )
+	public String handleForm(@ModelAttribute User user, Model model) {
+	
+		
+		/*		@RequestParam("email") String email,
+     		@RequestParam("Username") String name,
+    	    @RequestParam("pwd")String pwd,Model model)
+	
+	{
+	System.out.println(email+" "+name+""+pwd);
+	
+    	User user=new User();
+    	user.setEmail(email);
+    	user.setUsername(name);
+    	user.setPassword(pwd);
+    	*/
+    //	model.addAttribute("user", user);
+    	
+    	
+    	
+    	/*
+		 * String email = req.getParameter("email"); String name =
+		 * req.getParameter("Username"); String pwd = req.getParameter("password");
+		 * 
+		 * System.out.println(email+" "+name+" "+pwd);
+		 	*/
+	return "success";		
+	}
+
+}
